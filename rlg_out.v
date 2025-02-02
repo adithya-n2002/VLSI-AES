@@ -34,14 +34,3 @@ output [15:0]p,q;
 assign p = a[15:0];
 assign q = a[15:0]^b[15:0];
 endmodule
-
-/*module testbench();
-reg [127:0]i;
-wire [127:0]o;
-rlg_out dec(i[127:0],o[127:0]);
-initial
-begin
-i=128'h eb2d1b2f82e76171120861b4abf946a8; 
-#80 $finish;
-end
-endmodule*/
