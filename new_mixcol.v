@@ -44,15 +44,3 @@ else
 	end
 end
 endmodule 
-
-/*module testbench();
-reg [0:127]in;
-wire [0:127]out;
-new_mixcol nmix(in,out);
-initial 
-begin
-in = 128'h 632fafa2eb93c7209f92abcba0c0302b;
-#20 $display("out=%h", out);
-#40 $finish; 
-end
-endmodule*/
