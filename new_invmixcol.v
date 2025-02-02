@@ -62,16 +62,3 @@ case(w5[0:3])
 endcase
 end
 endmodule 
-
-/*module testbench();
-reg [0:127]in;
-wire [0:127]out;
-new_invmixcol invmix(in,out);
-initial 
-begin
-in=128'h ba75f47a84a48d32e88d060e1b407d5d;
-//#20 $display ("in = 128'h 632fafa2eb93c7209f92abcba0c0302b");
-#20 $display("out=%h", out);
-#40 $finish; 
-end
-endmodule*/
