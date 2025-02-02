@@ -49,19 +49,3 @@ always@(posedge clk)
   s_data_out<=out;
   end
 endmodule
-
-
-/*module testbench();
-reg clk=0;
-reg [127:0]val_out;
-reg [7:0] val;
-wire [127:0]in;
-mod_inv_subbytes s(clk,val_out,val,in);
-always #1 clk=~clk;
-initial
-begin
-val_out = 128'h 63f2c9fac9f2c963fe637d823026d4d4;
-val = 8'h ff;
-#40 $finish;
-end
-endmodule */
